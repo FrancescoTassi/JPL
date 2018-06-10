@@ -2,15 +2,15 @@ function [ xi , Neig_i, ui ] = RK4_fct_TRANSL_ONLY( x_nom , n_step_RT, sol , ii,
 % OUTPUTS are now the updated state and neighborhood for all the time instants k and all robots i
 Trem = T - n_step_RT; % Remaining time steps
 
-Neig_i=zeros(N,Trem); %And these instead correspond to the Neigh from the actual instant (included) to the penultimate (T-1) -> since don't care about T in that I cannot propagate anymore
+Neig_i=zeros(N,Trem); %Corresponding to the Neighborhood from the actual instant (included) to the penultimate (T-1) -> since don't care about T in that I cannot propagate anymore
 
 i = K(ii);
 
 % Up to TH the problem comprises collision avoidance, later than TH I've
-% only got the other constraints
+% only got the remaining optimization constraints
 
 
-xi=x_nom(:,:,i); % as first approx  % % % % % % % % % 
+xi=x_nom(:,:,i);  
 
 
     cvx_begin quiet
@@ -162,7 +162,7 @@ xi=x_nom(:,:,i); % as first approx  % % % % % % % % %
 
                 %% No Collision Avoidance, since they are already collision free at T-1 (due to prev.step) and also at T by design.     
 
-                %% So here the only constraints are on Initial and Final state, and control action.
+                %% the only constraints are on Initial and Final state, and control action.
 
             
             %% ALTERNATIVE (2)
@@ -203,4 +203,3 @@ xi=x_nom(:,:,i); % as first approx  % % % % % % % % %
 xi = full(xi);
 ui = full(ui);
 end
-% fix last value->it's the noise
