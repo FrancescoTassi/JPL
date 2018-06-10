@@ -1,0 +1,52 @@
+CVX: A system for disciplined convex programming   
+© 2005-2014 CVX Research, Inc., Austin, TX.
+http://cvxr.com
+info@cvxr.com
+
+Thank you for using CVX!
+
+The files contained in the various CVX distributions come from various sources
+and are covered under a variety of licenses. However, unlike the standard CVX
+distributions, this particular version of CVX contains no code governed by
+the GNU Standard License. Instead, all code is governed by the proprietary
+licenses offered by their owners.
+
+CVX Professional License
+------------------------
+
+With the exception of the bundled solvers and example library, each discussed
+in subsequent sections of this file, all code is subject to the CVX
+Professional license. You may *not* redistribute such a package, nor make it
+available on a public repository, without the express written consent of CVX 
+Research, Inc. Of course, the full CVX package is freely available to download
+directly from our servers, so please feel free to refer people to our web 
+site---even directly to our download page.
+
+Bundled solvers
+----------------
+
+The solvers Gurobi, and MOSEK are distributed with CVX in the gurobi/ and 
+mosek/ subdirectories, respectively. Future versions of CVX may include
+additional solvers as well, each in their own subdirectories. None of these 
+packages are owned by CVX Research, Inc. They are included with permission of 
+the authors, for use under the controls implemented by CVX Professional 
+license keys.
+
+Example library
+---------------
+
+The contents of the example library, which is distributed with CVX in the
+examples/ subdirectory, is *public domain*. You are free to use them in any
+way you wish; but when you do, we request that you give appropriate credit
+to the authors. A number of people have contributed to the examples in this
+library, including Lieven Vandenberghe, Joëlle Skaf, Argyris Zymnis, Almir
+Mutapcic, Michael Grant, and Stephen Boyd. If you would like to offer some
+examples to be included in this library, and are willing to release them to
+the public domain, please contact us!
+
+No Warranty
+-----------
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or 
+FITNESS FOR A PARTICULAR PURPOSE.
