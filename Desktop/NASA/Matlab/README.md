@@ -9,4 +9,6 @@ CVX-MPC based optimization algorithm for the real-time simulation of a swarm com
 3. Run the main code (RK4_main).
 
 ### What it does:
-The code is divided in two parts, where the first one generates a set of initial (offline) optimal trajectories for the swarm, that is then processed by the second part (online) where a CVX-MPC iterative procedure takes place, using the measured values in order to correct the optimization process, against external noises and disturbances. At the end of the specified time (tf), the multibody swarm (having the dynamics identified in the odefcn_RegSys_I_ExtDist.m file) will have reached the target configuration, identified by the l_gen_HEX.m function.
+The code is divided in two parts, where the first one generates a set of initial (offline) optimal trajectories for the swarm, that is then processed by the second part (online) where a CVX-MPC iterative procedure takes place, using the measured values in order to correct the optimization process, against external noises and disturbances. At the end of the specified time (tf), the multibody swarm (having the dynamics identified in the odefcn_RegSys_I_ExtDist.m file) will have reached the target configuration, identified by the l_gen_HEX.m function. 
+
+
